@@ -1,0 +1,234 @@
+html, 
+body {
+    height: 100%;
+    color: #121212;
+    overflow-x:hidden; 
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #121212;
+    -webkit-font-smoothing: antialiased;
+    background: #e5e9ec;
+}
+/*typography bootstrap overrides*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 27px;
+    
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 13px;
+}
+p{
+    line-height: 25px;
+    font-weight: 400;
+}
+a {
+    background: transparent;
+    outline: none; 
+    text-decoration: none;  
+    -webkit-transition: 0.4s cubic-bezier(0.25,.46,.45,.94);
+    transition: 0.4s cubic-bezier(0.25,.46,.45,.94);
+    -webkit-transition-property: background-color,color;
+    transition-property: background-color,color;
+}
+a:active,
+a:hover,
+a:focus {
+    outline: 0; 
+    background: transparent;
+    color: #35bdf6 !important;
+    text-decoration: none;    
+}
+
+.btn {
+    font-weight: 400;
+    font-size: 14px;
+    text-shadow: none !important;
+    -webkit-text-shadow:none !important;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.btn-theme-color{
+    background-color: #35bdf6;
+    color:#fff;
+}
+.btn-theme-color:hover{
+    color:#fff !important;
+    background-color: rgba(7,122,170, 0.85);
+
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.form-control{
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+    border: 1px solid #dadada;
+    resize: none;
+    height: 40px;
+    vertical-align: middle;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #FFF;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus{
+    border: 1px solid #999;
+    background: #FFF;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+div  {position: relative;}
+
+.login-panel {
+    position: relative;
+    top:200px;
+    margin:0 auto;
+    background: #fff;
+    border-radius: 0px;
+    color: #6f7b8a;
+
+}
+
+.login-panel >img { width: 100%; height: auto;}
+
+.logo {
+    width: 80px; 
+    height: 80px; 
+    margin: 0 auto;
+    margin-top: -40px;
+    border-radius: 70px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+
+}
+
+.logo > img {
+    margin: 0 auto;
+    width: 50px;
+    height: auto;
+    position:relative;
+    top:30%;
+}
+.login-content {
+    padding: 15px;
+}
+
+.payments-content {
+    padding: 30px;
+}
+
+.payments-panel {
+    top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 880px;
+    margin:0 auto;
+    background: #fff;
+    border-radius: 0px;
+    color: #6f7b8a;
+}
+
+
+.payments-panel >img { width: 100%; height: auto;}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.input-group-addon { cursor: pointer;}
+
+#logout {
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+
+.preview-text {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+
+/***********************
+    Media Queries
+***********************/
+@media(max-width: 768px) {
+    .login-panel {top:50px; }
+
+    .payments-panel {
+    top:0px;
+    }
+}
